@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Plot Chart Example</title>
+        <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script type="text/javascript" src="chart.js"></script>
+    </head>
+    <body onload="plotChart()" style="margin-top: 2em;">
+        <div style="text-align: center; margin-bottom: 2em;">
+            <input type="number" id="y1_min" placeholder="y1_min" value="-100" />
+            <input type="number" id="y1_max" placeholder="y1_max" value="100" />
+            <input type="number" id="y2_min" placeholder="y2_min" value="-30" />
+            <input type="number" id="y2_max" placeholder="y2_max" value="50" />
+            <input type="button" onclick="plotChart()" value="Recalc Table" />
+        </div>
+
+        <div id="chart"></div>
+    </body>
+</html>
